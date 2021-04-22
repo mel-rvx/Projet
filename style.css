@@ -1,0 +1,444 @@
+
+/* Caractèristiques générales */
+body p{
+	font-family: "Open Sans";
+	color:#002a5c;
+	font-size: 22px;
+}
+footer p{
+	font-family: "Open Sans";
+	color:#002a5c;
+	font-size: 12px;
+	margin-top: 100px;
+}
+
+/* Images du début */
+#logo{
+width: 100px;
+height: 40px;
+}
+#perspective{
+	float: right;
+	height: 500px;
+	width: 770px;
+}
+
+/* Rectangle bleu sur l'image perspective */
+.rect_bleu{
+	background-color: #145a97;
+	width: 280px;
+	height: 38px;
+	float: right;
+	margin-top: 450px;
+	margin-right: -300px;
+}
+.rect_bleu p{
+	color:white;
+	font-size: 18px;
+	text-align: center;
+	margin-top: 7px;
+}
+/* image dans ce rectangle */
+#timer{
+	float:left;
+	margin-left: 5px;
+	margin-top: 5px;
+	height:25px;
+  	width:25px;
+  	filter: invert(100%);
+}
+
+/* rectangle rouge sur l'image perspective */
+.rect_rouge{
+	background-color: #d51125;
+	width: 180px;
+	height: 38px;
+	float: right;
+	margin-right: -700px;
+	margin-top: 30px;
+}
+.rect_rouge p{
+	color:white;
+	font-size: 18px;
+	text-align: center;
+	margin-top: 8px;
+}
+
+/* Titre de début */
+.titre{
+	font-size: 48px;
+	font-family: "Open Sans";
+	color:#002a5c;
+	margin-top: 100px;
+}
+
+/* Position de l'emplacement avec l'image */
+.emplacement{
+	height: 30px;
+	width: 220px;
+	border:1px rgb(213,17,37, 0.1) solid;
+	background-color: rgb(213,17,37, 0.1);
+	border-radius: 30px;
+}
+.emplacement:hover{
+	
+	opacity: 80%;
+}
+#localisation{
+	height:20px;
+	width: 25px;
+	float: left;
+	border-left: 5px;
+	margin-top: 5px;
+	margin-left: 10px;
+	filter: invert(42%) sepia(63%) saturate(1502%) hue-rotate(-35deg) brightness(109%) contrast(191%);
+}
+.adresse{
+	text-align: center;
+	color:#d51125;
+	font-size: 16px;
+	margin-top: 7px;
+}
+
+/* Titre de type h2 */
+.studio{
+	font-size:32px;
+	color:#002a5c;
+	margin-top: 100px;
+}
+
+/* Rectangle avec bord bleu derriere le prix */
+.trait{
+	border-top:2px solid #002a5c;
+	border-left: 2px solid #002a5c;
+	border-bottom:2px solid #002a5c;
+	border-right:2px solid #002a5c;
+	height: 70px;
+	width: 246px; 
+	margin-left: 10px;
+}
+
+/* Rectangle indiquant le prix */
+.rectangle{
+	background-color: #d51125;
+	height: 70px;
+	width: 250px;
+	margin-top: -90px;
+}
+/* Effet au passage de la souris */
+.rectangle:hover{
+	transition-timing-function: ease-in-out;
+	transition-duration: 1s;
+
+}
+/* Ecriture du prix dans le rectangle */
+.partir{
+	font-size: 11px;
+	color:white;
+	text-align: left;
+	margin-left: 20px;
+	padding-top: 10px;
+}
+.prix{
+	font-size: 38px;
+	color:white;
+	text-align: left;
+	margin-top: -15px;
+	margin-left: 20px;
+}
+
+/* Titre de type h3 */
+.Villa{
+	font-size: 36px;
+	color:#002a5c;
+	margin-top: 100px;
+}
+
+/* caractèristiques du formulaire */
+fieldset{
+background-color:#145a97;
+height: 600px;
+width: 350px; 
+float:right;
+margin-right: 50px;
+margin-top: -300px;
+color:white;
+display: inline-block;
+vertical-align: bottom;
+margin-left: 100px;
+margin-bottom: 50px;
+}
+
+/* En-Tete du formulaire */
+.propriétaire{
+	font-family: "Open Sans";
+	font-size: 28px;
+	text-align: center;
+}
+/* Ecriture de civilité et de je souhaite */
+.civilité{
+	margin-left: 40px;
+	font-size: 16px;
+}
+/* Choix entre le differents type radio */
+.choix{
+	font-size: 16px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+/* Remplissage des données de grande case avec caractèristiques des cases */
+.nom{
+	margin-left: 20px;
+	margin-top: 10px;
+	width: 300px;
+}
+input{
+	height: 28px;
+	width: auto;
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 15px;
+}
+/* Remplissage des données de petites cases */
+.small_case{
+	width: 129px;
+	margin-left: 20px;
+	margin-top: 10px;
+}
+
+/* Case écrire un message */
+.message{
+	height: 50px;
+	margin-left: 20px;
+	margin-top: 10px;
+	width: 300px;
+}
+textarea {
+	resize: none;
+}
+
+/* Conditions d'utilisation à cocher */
+.Conditions{
+	font-size: 10px;
+	padding-top: 10px;
+	padding-left: 15px;
+	padding-right: 20px;
+	text-align: center;
+}
+label{
+	font-size: 10px;
+	color:white;
+}
+
+/* Boutton envoyer Mon Message avec l'image */
+button{
+	font-size: 18px;
+	width: 300px;
+	height: 50px;
+	color:white;
+	background-color: #d51125;
+	text-align: center;
+	margin-left: 25px;
+	padding-top: 5px;
+}
+button:hover{
+	opacity: 85%;
+	transition-duration: 0.2s;
+	transition-timing-function: ease-in-out;
+}
+#boutton{
+	float:left;
+	border:5px white solid;
+	border-radius: 20px;
+	background-color: white;
+	margin-top: -5px;
+}
+
+/* Fin du formulaire avec champs obligatoire*/
+.champs{
+	margin-left: 40px;
+}
+
+/* Image check mise au début de phrase */
+.icons{
+  background: url("Images/check.svg")no-repeat;
+  font-size: 22px;
+  padding-left: 30px;
+  line-height: 10px;
+  margin-left: 25px;
+}
+
+.description{
+	margin-bottom: 100px;
+}
+
+/* carré bleu se trouvant derrière l'image visuel */
+.carré{
+	background-color:#002a5c;
+	width:500px;
+	height: 300px;
+	margin-bottom: -320px;
+	margin-left: 20px;
+}
+
+
+/* media pour ordinateur portable */
+@media (max-width: 1200px){
+
+	/* réduction de la taille de l'image et des rectangles en fonction de la taille d'écran */
+	#perspective{
+		width:65%;
+		height: 75%;
+	}
+
+	.rect_rouge{
+		margin-right: -600px;
+	}
+
+	.rect_bleu{
+		width: 20%;
+		height: 20%;
+		float: right;
+		margin-top: 33%;
+		margin-right: -25%;
+	}
+
+	.rect_bleu p{
+		color:white;
+		font-size: 85%;
+		text-align: center;
+		margin-top: 7px;
+	}
+
+	/* Passage du formulaire de façon à ce qu'il passe sous le titre Villa Coquetiers */
+	fieldset{
+		float:none;
+		display: block;
+		margin-top: 100px;
+		margin-left: 30%;
+	}
+}
+
+/* media pour tablette */
+@media(max-width: 980px){
+
+	/* Réduction de la taille d'un titre et des rectnagles */
+	h2{
+		font-size: 180%;
+		margin-top: 80px;
+	}
+
+	.rect_bleu p{
+		color:white;
+		font-size: 65%;
+		text-align: center;
+		margin-top: 7px;
+	}
+
+	.rect_rouge{
+		width: 20%;
+		height: 20%;
+		float: right;
+		margin-right: -55%;
+		margin-top: 30px;
+	}
+
+	.rect_rouge p{
+		color:white;
+		font-size: 85%;
+		text-align: center;
+		margin-top: 8px;
+	}
+
+	#timer{
+		width: 22px;
+		height: 22px;
+	}
+}
+
+/* media pour petite tablette */
+@media(max-width: 720px){
+
+	/* Réduction de l'image Timer et du rectangle bleu */
+	#timer{
+		height:20px;
+		width:20px;
+		margin-top: 2px;
+	}
+
+	.rect_bleu p{
+		color:white;
+		font-size: 45%;
+		text-align: center;
+		margin-top: 7px;
+	}
+}
+
+/* media pour grand telephone ou petit */
+@media (max-width: 680px){
+	
+	/* alignement du formulaire a gauche, réduction des rectangles et des titres */
+	fieldset{
+		float:none;
+		display: block;
+		margin-top: 60px;
+		margin-left:0%;
+	}
+
+	.rect_rouge{
+		width: 15%;
+		height: 15%;
+		float: right;
+		margin-right: -55%;
+		margin-top: 20px;
+	}
+
+	.rect_rouge p{
+		color:white;
+		font-size: 65%;
+		text-align: center;
+		margin-top: 8px;
+	}
+
+	.rect_bleu{
+		width: 20%;
+		height: 20%;
+		float: right;
+		margin-top: 30%;
+		margin-right: -25%;
+	}
+
+	.titre{
+		font-size: 30px;
+	}
+
+	.studio{
+		font-size: 22px;
+	}
+
+	.Villa{
+		font-size: 24px;
+	}
+
+	.icons{
+ 		background: url("Images/check.svg")no-repeat;
+  		font-size: 18px;
+  		padding-left: 30px;
+  		line-height: 10px;
+  		margin-left: 25px;
+	}
+
+	.description p{
+		font-size: 18px;
+	}
+
+	.emplacement{
+		width: 210px;
+		font-size: 14px; 
+	}
+
+	#timer{
+		margin-top: 5px;
+	}
+}

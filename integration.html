@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Header -->
+  <head>
+    <meta charset="utf-8">
+    <title>Promogim</title>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+
+<!-- Body -->
+  <body>    
+    <img id="logo" src="Images/logo.svg">
+    <img id="perspective" src = Images/perspective.jpg>
+
+<!-- Rectangles présents sur l'image perspective-->
+<div class="rect_bleu">
+  <img id="timer" src="Images/timer.svg">
+  <p>Livraison 2ème trimestre 2022</p>
+</div>
+
+<div class="rect_rouge">
+  <p>Travaux en cours</p>
+</div>
+
+<!-- Titre -->
+<h1 class="titre">Villemonbles (93)</h1>
+
+<!-- Adresse avec lien maps -->
+
+<div class="emplacement">
+  <a style="text-decoration:none" href="https://www.google.com/maps/place/85+Boulevard+d'Aulnay,+93250+Villemomble/@48.8952586,2.5015909,17z/data=!3m1!4b1!4m5!3m4!1s0x47e613005c618239:0x18a24a769a2dbdb7!8m2!3d48.8952551!4d2.5037796"> 
+  
+  <img id="localisation" src="Images/map.svg">
+  <p class="adresse"> 85, Boulevard D'Aulnay</p>
+  </a>
+</div> 
+
+<h2 class="studio"> Du studio au 4 pièces</h2>
+
+<!-- classes permettant de modifier le cadre rouge et ce qu'il contient, ainsi que le rectangle derrière lui -->
+<div class="trait"></div>
+<div class="rectangle">
+  <p class="partir"> à partir de </p>
+  <p class="prix">XXX€/mois*</p>
+</div>
+
+<!-- titre de type h3 -->
+<h3 class="Villa">Villa Coquetiers : Un emplacement tranquile,</br>
+pratique et accessible à 300m* du tramway</h3>
+
+<!-- Début du formulaire -->
+<fieldset>
+  <form>              <!-- En-Tete -->
+                      <h3 class="propriétaire">Devenez propriétaire à Villemomble</h3>
+
+                      <!-- choisir la civilité de l'utilisateur -->
+                      <label class="civilité">Civilité*</label>
+                      
+                      <input type="radio" id="Madame" name="groupe1" value="Madame" required=""> 
+                      <label class="choix" for="Madame">Madame</label>
+                      <input type="radio" id="Monsieur" name="groupe1" value="Monsieur" required=""> 
+                      <label class="choix" for="Monsieur">Monsieur</label>
+                      
+                      <br>
+                      
+                      <!-- Renseigner le nom obligatoirement -->
+                      <input class="nom" id="nom" placeholder="Nom*" required=""  
+                      pattern="[a-zA-ZÀ-ÿ]*">
+
+
+                      <!-- placeholder: indication grisée -->
+                      <!-- required: il faut renseigner le champs sinon la validation est bloquée -->
+
+
+                      <!-- Renseigner le prénom obligatoirement-->             
+                      <input class="nom" id="prenom" placeholder="Prénom*" required=""  
+                      pattern="[a-zA-ZÀ-ÿ]*">                                        
+
+                      <br>
+
+                      <!-- type="tel": bascule le clavier sur un smartphone -->
+                      <!-- pattern: expression régulière à vérifier pour pouvoir valider -->
+                      <input class="small_case" id="telephone" type="tel" placeholder="Téléphone*" required="" pattern="06[0-9]{8}">
+
+                      <!-- classe small_case concernant les deux cases téléphone et code postal qui sont plus petite -->
+                      <input class="small_case" id="code postal" placeholder="Code postal*" required=""  
+                      pattern="[0-9]{5}*">
+
+                      <br>
+
+                      <!-- Renseigner l'E-mail obligatoirement -->
+                      <input class="nom" id="email" type="email" placeholder="E-mail*" required="" pattern="[a-zA-Z]*.[a-zA-Z]*@u-psud.fr">
+
+                      <br>
+                      <br>
+
+                      <!-- Demande à l'utilisateur de choisir entre habiter ou investir : Boutons type radio comme pour le choix de la civilité -->
+                      <label class="civilité"> je souhaite* </label>
+                     
+                      <label class="choix" for="Habiter">
+                      <input class="choix" id="Habiter" type="radio" name="groupe2" value="Habiter" required=""> Habiter </label>
+                      <label class="choix" for="Investir">
+                      <input class="choix" id="Investir" type="radio"name="groupe2" value="Investir" required=""> Investir </label>
+                      
+                      <br>
+
+                      <!-- textarea permet d'écrire un message avec un maximum ou minimum de caractère "maxlength" -->
+                      <textarea class="message" id="comments" placeholder="Votre message"
+                      maxlength="300"></textarea>
+
+                      <br>
+
+                      <!-- case à cocher de type checkbox -->
+                      <div class="Conditions">
+                      <input type="checkbox" id="Conditions" name="case" value="Conditions">
+                      <label for="Conditions">En cochant cette case, je consens à recevoir des
+                      offres commerciales et des informations sur les produits et services de Promogim - Mention sur la protection des données personnelles.</label>  
+                      </div>  
+
+                      <br>
+
+                      <!-- Bouton permettant d'envoyer le formulaire avec le message -->
+                      <button type="submit">
+                      <img id="boutton" src="Images/arrow.svg"
+                      height="25px"
+                      width="25px">
+                      Envoyer Mon Message</button>
+                      
+
+                      <label class="champs" for="Conditions">*Champs obligatoires</label>
+
+  </form>
+</fieldset>
+<!-- Fin du formulaire -->
+
+<!-- classe icons permet de mettre une image au début de chaque ligne -->
+<div>
+  <p class="icons"> A 300m du tram</p>
+  <p class="icons"> Quartier des Coquetiers</p>
+  <p class="icons"> Proche des commerces et services</p>
+</div>
+
+<br>
+
+<!-- Description -->
+<section class="description">
+  <p>
+    Dans le quartier pavillonnaire des Coquetiers, la résidence prend place à proximité des commerces, services et établissementsscolaires, La gare du RER E se rejoint facilement par le tram situé à 4 minutes* seulement de la résidence.</p>
+  <p>
+  Entourée d'un jardin, Villa Coquetiers s'élève sur 2 bâtiments composés d'un nombre réduit d'appartements lumineux s'ouvrant sur des baies vitrées donnant sur un balcon, une terasse ou une loggia.
+  </p>
+</section>
+
+<!-- carré se trouvant derrière l'image visuel -->
+<div class="carré"></div>
+
+<!-- Image visuel -->
+<img id="visuel" src="Images/visuel.jpg"
+height="300px" 
+width="500px">
+
+<!-- Pied de page -->
+<footer>
+  <p>
+    Fusce dapidus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+    Cras mattis consectetur purus sit amet fermentum. Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit amet non magna. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec sed odio dui. Sed posuere consectetur est at lobortis. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum. Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit amet non magna. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec sed odio dui. Sed posuere consectetur est at lobortis.
+  </p>
+</footer>
+
+  </body>
+</html>
